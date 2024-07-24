@@ -19,7 +19,7 @@ const AllRequests = () => {
 
 useEffect(() => {
   const fetch = async () => {
-    const response = await axios.get("http://localhost:3000/api/v1/get-all-requests", { headers })
+    const response = await axios.get("https://haven-lp3e.onrender.com/api/v1/get-all-requests", { headers })
     setAllRequests(response.data.data)
   }
   fetch();
