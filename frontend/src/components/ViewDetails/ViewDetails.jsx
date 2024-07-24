@@ -18,7 +18,7 @@ const ViewDetails = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `http://localhost:3000/api/v1/get-child-by-id/${id}`
+        `https://haven-lp3e.onrender.com/api/v1/get-child-by-id/${id}`
       );
 
       setData(response.data.data);
@@ -32,18 +32,18 @@ const ViewDetails = () => {
     childid :id
   };
   const handlePreference=async ()=>{
-    const response = await axios.put("http://localhost:3000/api/v1/add-child-to-preference",{},{headers});
+    const response = await axios.put("https://haven-lp3e.onrender.com/api/v1/add-child-to-preference",{},{headers});
     alert(response.data.message)
   }
   const deleteChild=async()=>{
-   const response= await axios.delete("http://localhost:3000/api/v1/delete-child",{headers})
+   const response= await axios.delete("https://haven-lp3e.onrender.com/api/v1/delete-child",{headers})
    alert(response.data.message);
    navigate("/all-profiles")
   }
   
   const handleRequest=async()=>{
     try{
-      const response=await axios.post('http://localhost:3000/api/v1/request',{},{headers})
+      const response=await axios.post('https://haven-lp3e.onrender.com/api/v1/request',{},{headers})
       alert(response.data.message);
       navigate("/profile");
 }
