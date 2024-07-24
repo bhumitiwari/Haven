@@ -12,7 +12,7 @@ const Preferences = () => {
   useEffect(() => {
 
     const fetch = async () => {
-      const response = await axios.get("http://localhost:3000/api/v1/get-preferred-children", { headers });
+      const response = await axios.get("https://haven-lp3e.onrender.com/api/v1/get-preferred-children", { headers });
       setPreferences(response.data.data);
     }
     fetch()
