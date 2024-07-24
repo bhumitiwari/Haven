@@ -38,7 +38,7 @@ const AddChild = () => {
       }
       else {
         const response = await axios.post(
-          "http://localhost:3000/api/v1/add-child", Data, { headers }
+          "https://haven-lp3e.onrender.com/api/v1/add-child", Data, { headers }
         );
         setData({
           url: "",
