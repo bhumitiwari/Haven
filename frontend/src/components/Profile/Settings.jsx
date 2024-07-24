@@ -15,7 +15,7 @@ const Settings = () => {
   }
   useEffect(() => {
     const fetch = async () => {
-      const response = await axios.get("http://localhost:3000/api/v1/get-user", { headers })
+      const response = await axios.get("https://haven-lp3e.onrender.com/v1/get-user", { headers })
       setProfileData(response.data)
       setValue({ address: response.data.address })
     }
