@@ -8,7 +8,7 @@ const Profiles = () => {
   useEffect(()=>{
     const fetch=async ()=>{
       const response=await axios.get(
-        "http://localhost:3000/api/v1/get-children"
+        "https://haven-lp3e.onrender.com/api/v1/get-children"
       );
       
       setData(response.data.data);
