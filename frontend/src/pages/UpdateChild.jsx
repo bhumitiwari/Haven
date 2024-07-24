@@ -41,7 +41,7 @@ childid:id
       }
       else {
         const response = await axios.put(
-          "http://localhost:3000/api/v1/update-child", Data, { headers }
+          "https://haven-lp3e.onrender.com/api/v1/update-child", Data, { headers }
         );
         setData({
           url: "",
@@ -64,7 +64,7 @@ childid:id
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `http://localhost:3000/api/v1/get-child-by-id/${id}`
+        `https://haven-lp3e.onrender.com/api/v1/get-child-by-id/${id}`
       );
 
       setData(response.data.data);
