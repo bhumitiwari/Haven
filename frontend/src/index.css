@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.logo{
+ font-family:"Sofia",cursive ;
+}
+.tag{
+ font-family:"Sofia",cursive ;   
+}
+.name{
+    font-family:"Sofia",cursive ;   
+}  
+.profiles{
+    font-family:"Sofia",cursive ;     
+}
