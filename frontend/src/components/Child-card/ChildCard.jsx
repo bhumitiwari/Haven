@@ -10,7 +10,7 @@ const ChildCard = ({data,preference}) => {
   }
   const handleRemoveBook=async ()=>
   {
-    const response =await axios.put("http://localhost:3000/api/v1/remove-child-from-preference",{},{headers});
+    const response =await axios.put("https://haven-lp3e.onrender.com/api/v1/remove-child-from-preference",{},{headers});
    
     alert(response.data.message)
   }
