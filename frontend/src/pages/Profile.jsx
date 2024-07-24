@@ -14,7 +14,7 @@ const Profile = () => {
   }
   useEffect(() => {
     const fetch = async () => {
-      const response = await axios.get("http://localhost:3000/api/v1/get-user", {headers})
+      const response = await axios.get("https://haven-lp3e.onrender.com/api/v1/get-user", {headers})
       setProfile(response.data);
     }
     fetch();
