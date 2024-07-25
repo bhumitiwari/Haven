@@ -30,7 +30,7 @@ const change=(e)=>{
 }
 const submitChanges=async(i)=>{
   const id= AllRequests[i]._id;
-  const response=await axios.put(`http://localhost:3000/api/v1/update-status/${id}`,Values,{headers})
+  const response=await axios.put(`https://haven-lp3e.onrender.com/api/v1/update-status/${id}`,Values,{headers})
   alert(response.data.message)
 }
 
